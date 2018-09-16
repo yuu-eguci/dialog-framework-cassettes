@@ -1,0 +1,1264 @@
+# いちいち座標指定面倒なので最初に全画像の座標登録しとく
+<event name=image file="bg_skype.jpg" x=0 y=0>
+<event name=image file="bg_ryokan.jpg" x=0 y=0>
+<event name=image file="chara_gm.png" x=50 y=175>
+<event name=image file="chara_inu.png" x=382 y=114>
+<event name=image file="chara_kabu.png" x=499 y=127>
+<event name=image file="chara_kabu_kabu.png" x=499 y=127>
+<event name=image file="chara_kabu_ribbon.png" x=499 y=127>
+<event name=image file="dialogbox.png" x=20 y=320>
+<event name=image file="material_circle.png" x=145 y=60>
+<event name=image file="mob_female.png" x=195 y=100>
+<event name=image file="mob_male.png" x=200 y=95>
+<event name=image file="mob_monster.png" x=185 y=95>
+<event name=image file="mob_nae.png" x=195 y=95>
+<event name=image file="mob_touno.png" x=200 y=95>
+<event name=image file="diceframe.png" x=230 y=140>
+<event name=image file="sheet.png" x=60 y=30>
+<event name=image file="sheet_inu.png" x=60 y=30>
+<event name=image file="sheet_kabu.png" x=60 y=30>
+<event name=image file="map0.jpg" x=60 y=30>
+<event name=image file="map1.jpg" x=60 y=30>
+<event name=image file="map2.jpg" x=60 y=30>
+<event name=image removeall>
+<event name=image file="bg_skype.jpg" put>
+<event name=image file="dialogbox.png" put>
+<event name=bgm file="cave.mp3" volume=0.5 play>
+<event name=skip>
+
+(ウェルダ)
+みんな集まってる？
+
+(緑色)
+ハッここに…
+貴女様の足元にかしずき足を舐めております
+
+(ウェルダ)
+きたない
+お風呂入ってくる
+
+(とーちゃん)　(緑色)
+背中流しますね！！！
+
+(ウェルダ)
+ついてくんなｗｗ
+
+<event name=image changefrom="bg_skype.jpg" changeto="bg_ryokan.jpg">
+<event name=image file="chara_gm.png" put>
+(GM)
+さて
+じゃあ前回のあらすじ
+
+(GM)
+修学旅行にきたら綺麗な部屋から汚い部屋に移動させられていた！
+じゃあここから自由行動です
+
+<event name=image file="chara_kabu.png" put>
+(緑色かぶき)
+とりあえず外でるか
+
+(GM)
+部屋を出る段階で
+幸運
+聞き耳
+その他好きなのでふって
+
+<event name=image file="chara_inu.png" put>
+(神山犬千代)
+わーお
+もう慎重に行動しないといけない段階だったねそういや
+
+<event name=image file="diceframe.png" put>
+<event name=dice skill="犬千代 幸運" result=76 x=270 y=170>
+
+<event name=image file="diceframe.png" remove>
+(神山犬千代)
+失敗した
+
+<event name=image file="diceframe.png" put>
+<event name=dice skill="かぶき 聞き耳" result=11 x=270 y=170>
+
+<event name=image file="diceframe.png" remove>
+(GM)
+じゃあそうだなぁ
+となりの部屋の扉をｶﾞﾀｶﾞﾀと開けようとする音と
+それを諦めてこっちに向かってくる足音が聞こえる
+
+(緑色かぶき)
+それは、犬千代が扉を開ける前ってことでOK？
+
+(GM)
+うん
+
+(緑色かぶき)
+じゃあ犬千代に声をかけるね
+
+(神山犬千代)
+これは私が扉を開けた瞬間
+「え、何？」と振り向いて
+歌舞伎マンがあらぬものを見てしまう漫画パターン･･・？
+
+(緑色かぶき)
+注意を促そうとしてんのに開けようとしてんじゃねー！！
+
+(神山犬千代)
+さあ注意をくれよ…
+こういう展開になりたくなかったらな…へへ
+
+(緑色かぶき)
+なんでぼくがプレッシャーかけられてんの！？
+
+(緑色かぶき)
+「まて犬千代くん、何者かがこの部屋にくる足音がする」
+
+(神山犬千代)
+「あん？なんだセンコー点呼とってるのか。やるじゃん…」
+胡坐をかいて待つよ
+
+(緑色かぶき)
+じゃぼくも
+「おうおう、先公、こりゃいってーどーゆーこった
+説明してもらおうか」
+って態度で待ってるね
+
+(GM)
+そんなこんなで扉が空きます
+扉を開けたのは見覚えの無い村人？でした
+
+<event name=image file="material_circle.png" put>
+<event name=image file="mob_male.png" put>
+(GM)
+「なにやってんだおめえら
+良いか？いまから旅館からでるんじゃねぇ
+あー旅館前くらいにはでてもいいがな
+目の届かないところにいくんじゃねぇぞ」
+
+<event name=image file="material_circle.png" remove>
+<event name=image file="mob_male.png" remove>
+(GM)
+といって去って行きました
+
+(神山犬千代)
+「う、ウスッ！えと、宿の方？……んんん？
+歌舞伎揚げマン、今の人物どう見る？信用できそうか？」
+
+(緑色かぶき)
+「きみは人を見る目がないねえ。あれは大ウソつきの目だよ
+この旅館にいては危険だ、いますぐ脱出しよう」
+
+(神山犬千代)
+「…そうさなあ。なにしてんだ？って言ってたもんなぁ」
+
+(GM)
+アイディアでふってもいいよ
+
+<event name=image file="diceframe.png" put>
+<event name=dice skill="かぶき アイディア" result=7 x=270 y=170>
+
+<event name=image file="diceframe.png" remove>
+(GM)
+じゃあ君は
+あの村人が麻袋をもってたなーと思った
+
+(緑色かぶき)
+えーと
+全体的な方針をきめとこう
+
+(神山犬千代)
+言う通りにするかこの場所から離れるかか
+んー、今までやったTRPGが動けばなんとかなるタイプだったから
+さっきの村人捕まえたりがんがん動きたいけど
+
+(緑色かぶき)
+うんうん同感です
+ウェルのNPCは従ったら負けだ！
+
+(神山犬千代)
+うわぁ、GMを疑った
+
+(GM)
+私のNPCは優しいよ^^
+
+(緑色かぶき)
+出よったで～悪魔のような悪魔の笑顔や！
+
+(緑色かぶき)
+「はいはーい　とりあえず外でたいとおもいまーす」
+
+(神山犬千代)
+「まあここの前くらいまでは出てっていいって言ってたしな
+出るか」
+
+(神山犬千代)
+「ところでさっきなんで隣の部屋を開けようとしてたんだ？
+さっきの人」
+
+(緑色かぶき)
+GM、もともとぼくらの部屋の隣には誰が入ってたの？
+
+<event name=image file="map1.jpg" put>
+(GM)
+隣には女子が泊まってたはずだね
+
+<event name=image file="map1.jpg" remove>
+(緑色かぶき)
+「安否を確認しよう！」
+
+(神山犬千代)
+「俺が救世主になる！」
+
+(GM)
+じゃあ
+1D6ふって
+
+(神山犬千代)
+ええええええ
+
+<event name=image file="diceframe.png" put>
+<event name=dice skill="？？" result=4 x=270 y=170>
+
+<event name=image file="diceframe.png" remove>
+<event name=image file="material_circle.png" put>
+<event name=image file="mob_male.png" put>
+(GM)
+じゃあ廊下にでたときにさっきと違う村人にあう
+君たちをみるとニコニコして
+壁によりかかり君たちの動向を伺っている
+
+(GM)
+村人の詳細を見たい時は目星で
+
+<event name=image file="diceframe.png" put>
+<event name=dice skill="かぶき 目星" result=40 x=270 y=170>
+
+<event name=image file="diceframe.png" remove>
+(GM)
+年齢は50程度
+山で仕事をしているのかかなりﾑｷﾑｷﾎﾞﾃﾞｨだね
+
+(緑色かぶき)
+男の肉体に関する情報なんてどうでもいいんで、
+もっと重要そうなところをお願いします
+
+(GM)
+重要だよ
+具体的に言えばSTR15 SIZ15くらいある
+
+(緑色かぶき)
+「犬千代くん…！
+どうやらオレたちは異世界に迷いこんだらしいぞ…巨人がいる！」
+
+(GM)
+君たちがチビなんだよ
+(かぶきSIZ8 犬千代SIZ9)
+
+(神山犬千代)
+「あ…ちっす…ここで何してたんスか…？」
+
+(GM)
+「なんでもないよぉ」とニコニコしてる
+
+(神山犬千代)
+えぇ…
+
+(緑色かぶき)
+無駄だよ
+ウェルのNPCなんてみんな化け物が化けた物に決まってる
+化け化け物に決まってるぜ
+
+<event name=image file="material_circle.png" remove>
+<event name=image file="mob_male.png" remove>
+(GM)
+わかりにくいｗ
+
+(緑色かぶき)
+つーことで
+ぼくは女子の部屋の様子をみたい
+
+(GM)
+ドアは内側から閉まっているのかあかない
+
+(神山犬千代)
+開錠してみる？
+
+(緑色かぶき)
+ノータイムで発想が犯罪に走るのこわい
+
+(GM)
+ドアをガチャリと開こうとして音がたつと
+中からﾋｨｨみたいな声が聴こえる
+
+(緑色かぶき)
+「ぼくとしたことが…
+女子の部屋にはいるとき、
+ノックをせずいきなり開こうとするのは不躾すぎたな！
+おーい、みんなのアイドル、かぶきーだよ。だいじょうぶかー？」
+と声をかける
+
+(GM)
+特に反応はなし
+
+(緑色かぶき)
+「ﾋﾟｰﾝ…ときた
+ぼくはクラスの女子に…嫌われている！」
+
+(GM)　(神山犬千代)
+それはまぁ…　クラスにいたらなぁ…
+
+(緑色かぶき)
+「自らに不利な結論もあまんじて受け入れる、
+ぼくはなんて人間ができているんだ…」
+ひとりうなずきながら、隣の男子の部屋にいってみたい
+
+(神山犬千代)
+「…ちょっと先にセンコーんとこいこうぜ歌舞伎マン
+マスターキー持ってるんじゃね？」
+
+(緑色かぶき)
+「いや、常識的に考えて、施錠している女子の部屋に
+マスターキーで押し入ったら変態じゃね？」
+
+(神山犬千代)
+「今常識に囚われちゃいけない状況じゃね？
+外とか部屋見たろ？」
+
+(緑色かぶき)
+「ハッ…その通りだな…
+きみのおかげで、大事なものに気付けた気がするよ。
+マスターキーを手に入れて女子の部屋に押し入ろう」
+
+(神山犬千代)
+「なんでそこだけ抜き出したかなー！」
+
+(緑色かぶき)
+ではぼくは先公の部屋にいくよ。
+
+(神山犬千代)
+犬千代はこっちを見張ってくる村人を見張り返してるよ
+
+(GM)
+先生の部屋のドアをガラッとあけると
+誰も居ないね
+目星どうぞ
+
+<event name=image file="diceframe.png" put>
+<event name=dice skill="かぶき 目星" result=62 x=270 y=170>
+
+<event name=image file="diceframe.png" remove>
+(GM)
+じゃあついでにアイディアもどうぞ
+
+(緑色かぶき)
+アイディアは自信ないんだよなー
+
+<event name=image file="diceframe.png" put>
+<event name=dice skill="かぶき アイディア" result=95 x=270 y=170>
+
+<event name=image file="diceframe.png" remove>
+(GM)
+じゃあ荷物は無いみたいだね
+
+(緑色かぶき)
+じゃあ村人を見張ってる犬千代くんに報告する
+「いぬちーよ、先公は荷物ひとつ残さず消えたようだ」
+
+(神山犬千代)
+「んだよ、俺今ガンバトルしてるんだよ
+あいつ、中々面割れねぇぜ…ってなんだと！？」
+
+(緑色かぶき)
+「いや、ガンをとばしてるだけのチキン状態を
+銃撃戦みたいに言うのはどうだろうね…」
+
+(神山犬千代)
+「あいつ責任を感じて逃げたか…しゃーない
+…あ、そうだ。浴場にいるかもしれない
+ほら、朝風呂」
+
+<event name=image file="map2.jpg" put>
+(緑色かぶき)
+「発想が突飛だなー。でも否定する理由もないな
+風呂いこう」
+風呂いきます
+
+(GM)
+はい
+旅館によくあるお風呂をイメージして
+あさからちゃんとお湯がはってあってきれい
+
+(神山犬千代)
+施設としての機能はちゃんといきてたんだ
+
+(緑色かぶき)
+「いぬちー、風呂場、クリアー。二重の意味でクリアー
+次どこいく？」
+
+<event name=image file="map2.jpg" remove>
+(GM)
+あ
+1D6ふって
+
+(緑色かぶき)
+また村人かよ…今度はぼくがふります
+
+<event name=image file="diceframe.png" put>
+<event name=dice skill="？？" result=6 x=270 y=170>
+
+<event name=image file="diceframe.png" remove>
+<event name=image file="material_circle.png" put>
+<event name=image file="mob_male.png" put>
+(GM)
+あー
+お風呂から戻るとき
+今までみた村人よりも更に大きな村人に合う
+
+(神山犬千代)
+どういうことだよ！！！？？？？
+
+(緑色かぶき)
+巨人の国説が強化されてく！？
+
+(神山犬千代)
+巨人の村じゃん！！！
+
+(GM)
+人間の範疇は超えてないよ
+腰には大きな山刀
+
+(緑色かぶき)
+「すんませーん。いまの状況しりたいんですけど
+おしえてくれませんかー？」
+
+(GM)
+「あぁ心配いらねぇ
+2～3日我慢してくれ」
+
+(神山犬千代)
+こいつ何か知ってやがる…
+
+(緑色かぶき)
+ってことは心配する必要があり、2～3日じゃすまないってことだな！
+「何もわからない状態だと、クラスの女子とかおびえちゃってー
+あんまりよくない感じなのでー
+もうちょい詳しくお願いできません？」
+
+(GM)
+「あいつらは暴れたからな…」
+
+(神山犬千代)　(緑色かぶき)
+「んんんん？？」　「おびえてるのってアナタたちのせい！？」
+
+(GM)
+「まぁ…そうなるな。面倒かけさせるなよ？」
+と腰の山刀に手をやる
+
+(緑色かぶき)
+「アナタが事情を話すだけで、ぼくらも自重して、
+その面倒はなくなりますよ？」
+と説得する
+
+(GM)
+「仕方ないな。じゃあ面倒になる前に片付けておくか…」
+山刀を抜きます
+
+(神山犬千代)
+おいいいいいい！！？？？？
+
+(緑色かぶき)
+「うん、山刀を抜くだけでも面倒はおきなくなるよね～♪
+こりゃ一本とられちゃったな～！サヨナラ！」
+
+(神山犬千代)
+「すんませんしたー！！」
+ダッシュで　とにかく離れるか
+
+<event name=image file="material_circle.png" remove>
+<event name=image file="mob_male.png" remove>
+(GM)
+あ、じゃあもう一つ目星どうぞ
+
+<event name=image file="diceframe.png" put>
+<event name=dice skill="かぶき 目星" result=20 x=270 y=170>
+
+<event name=image file="diceframe.png" remove>
+(GM)
+旅館は竹で出来た柵で囲まれてるんだけど
+その外は森なのね
+その森に沢山鳴子が仕掛けられているのが見えた
+
+<event name=image file="map2.jpg" put>
+(緑色かぶき)
+ふむ
+次は納屋にでもいってみる？
+
+(神山犬千代)
+おう
+
+(GM)
+納屋は前に見た時よりもぼろぼろじゃなくて
+よく使われてる感じ
+中にあるものも
+前に見た納屋とは全然違うことを思い出す
+
+<event name=image file="map2.jpg" remove>
+(緑色かぶき)
+へー何があるの？
+
+(GM)
+うーん
+人を縛るのに適した縄とか
+
+(神山犬千代)
+やけに具体的だな…
+
+(GM)
+鳴子を修復するためにある何がしかとか
+バトミントンセットとか
+
+(神山犬千代)
+フリかよ
+
+(緑色かぶき)
+「バドミントンやろうぜいぬちー！！！」
+
+(神山犬千代)
+「部屋の中かな！外でも大丈夫そうかな！」
+
+(緑色かぶき)
+「ちょっとせまいなー！柵の外でやろうぜ！」
+
+(GM)
+1D6ふって
+
+<event name=image file="diceframe.png" put>
+<event name=dice skill="？？" result=4 x=270 y=170>
+
+<event name=image file="diceframe.png" remove>
+<event name=image file="material_circle.png" put>
+<event name=image file="mob_male.png" put>
+(GM)
+また別の村人がやってきて
+バトミントンするなら表の庭でやんな！と
+外にはねが出ると面倒だからねーと
+
+(緑色かぶき)
+じゃあその村人にも
+「あれれ～？おじさん、外になにかあるの～？」
+
+(GM)
+外にでるなって言われただろう？と
+旅館の敷地内からでないでねーと
+
+(緑色かぶき)
+こいつも情報はダメかな
+
+<event name=image file="material_circle.png" remove>
+<event name=image file="mob_male.png" remove>
+(GM)
+どうする？
+
+(神山犬千代)
+外部からの防衛戦張ってる感じだしなあ
+
+(緑色かぶき)
+そうかな？ぼくは村人が敵だと思ってるんだけど
+村人たちって、ぼくらをいけにえか
+なんかにしようとしてんじゃねーのって思ってるんだけど
+
+(神山犬千代)
+あー
+先公はもう既に…
+
+(緑色かぶき)
+バドミントンもさー
+ギャグかもしれないけど、
+子供を閉じ込めておくためだと思うし
+
+(神山犬千代)
+中で退屈しないようにねぇ
+
+(緑色かぶき)
+ぼくらを守るためなら、「仕方ないから殺すか」とはならんでしょ
+
+(神山犬千代)
+たすかに
+てっきり神社の注連縄的な考えで邪なものを退けているもんかと
+
+(緑色かぶき)
+まあ外に敵の可能性もあると思うよ
+五分五分だと思うけど、ぼくは外行く派なのですよ
+
+(神山犬千代)
+いけにえだとしても結構こっちを遊ばせてるのも
+なんだかなぁ感はあったりするけどね
+鍵もかけないし遊んでてもいいよとかだし
+
+(緑色かぶき)
+もし外からの何かを退けてるんだとしたら
+あまりにも、外じゃなくて中のぼくらを見てるようにみえないか？
+敵が外なら、みるのは外じゃないか？
+
+(神山犬千代)
+実は仮想敵はどこからでも侵入してくるから、
+外からのは鳴子にまかせっきり…
+いや、まあそうか
+
+(緑色かぶき)
+ってところで意見交換は煮詰まってきたと思うけど
+いぬちーはどっち派？
+
+(神山犬千代)
+いぬちよは技能的にも何かと相対した時勝てないから
+中に残ってる派かな
+
+(緑色かぶき)
+オケイ
+では中に残ろうかね
+
+(神山犬千代)
+えまじで。
+付き合わせちゃったようでなんか悪い…
+
+(緑色かぶき)
+いいよ、五分五分だと思うし
+
+(GM)
+バドミントンしないの？
+
+(神山犬千代)
+バドミントンするか
+
+(緑色かぶき)
+じゃ表に行きまーす
+
+(GM)
+はい　そしたら
+玄関から外に出るんだけど今までなかった建物というか
+プレハブ小屋みたいなのが近くにあるのがみえる
+
+(神山犬千代)
+あの中に重機があってそれに乗って
+この場を離れることが出来るスーパープレイがワンチャン？
+
+(緑色かぶき)
+ぼくと違って趣味技能をまだ使えてないから、
+あせってやがるな。しっしっし
+
+(緑色かぶき)
+小屋にいってみる
+「いぬちーなんだろあれ？」てくてく
+
+(GM)
+じゃあ少し大きな物音がしたあと村人がでてくる
+イライラしてるようだね
+
+(緑色かぶき)
+「あのーどうかしたんです？」
+
+(GM)
+君たちの方をみると
+遊ぶなら敷地内にしろよといって
+特に質問には答えず立ち去っていく
+
+(神山犬千代)
+…村人と会話が成立したことあったっけ？
+
+(緑色かぶき)
+ないな。だから化け化け物なんだって
+じゃあ小屋内をみたい
+
+(GM)
+鍵がかかってるね
+
+(神山犬千代)
+「…私の出番じゃね？」
+
+(GM)
+そうだね
+振っていいよ
+
+<event name=image file="diceframe.png" put>
+<event name=dice skill="犬千代 鍵開け" result=43 x=270 y=170>
+
+<event name=image file="diceframe.png" remove>
+(GM)
+じゃあ鍵は簡単な作りだったので直ぐ開くよ
+
+(神山犬千代)
+「（髪の毛ﾌｧｯｻｧ）中、何があるんだろうな？」
+
+(緑色かぶき)
+「っじで…ぱっねー…っちょ…っじで…っねー」
+感動のあまり語彙力を失う
+
+(GM)
+じゃあ中にはね　人が倒れてる
+
+(神山犬千代)
+「人間ーー！！！？？？？？」
+
+<event name=image file="material_circle.png" put>
+<event name=image file="mob_nae.png" put>
+(GM)
+その白い髪を君たちはよく覚えている
+神社にいた少女だ
+君たちに気がついて顔をむけると殴られたあとが見える
+
+(GM)
+君たちが入ってきたことにびっくりしてる
+「鍵をしめて」と小さく
+
+(緑色かぶき)
+ウェルのNPCが嘘をつくはずがない。すぐにしめるぞ
+
+(神山犬千代)
+「え、ええええ…？あれ？えええ？ジモッティーさんじゃねッスか…？」
+
+(GM)
+「ジモティー？」
+
+(神山犬千代)
+「いいいいやいや、おおお俺達の？通称っつか？
+ほら、地元の人ってジモティーって言うじゃんん？
+ていうか俺達君の名前知らないじゃん？？
+なんて呼べばいいのかわからないじゃん？」
+
+(神山犬千代)
+そういえばキョドり君だったちよ
+
+(GM)
+「洞月…苗」と応える　うろつき・なえ
+
+(緑色かぶき)
+「で、うろちー、もう事情は話してくれるんだろーな？」
+
+(GM)
+「君たちは？名前…」
+
+(緑色かぶき)　
+「かぶきーだ」
+
+(神山犬千代)
+「じ、自分いぬちよッス」
+
+(GM)
+うそやんって顔してる
+「ここはあねや、君たちが泊まってた旅館じゃない」
+
+(GM)
+「君たちみたいな小さな子が…
+いや　夜の8時に浴場の裏にきて
+その時間なら誰も居ないから」
+
+(GM)
+「今は時間がない
+君たちと私が話しているのを見られたら
+ごめん　また夜に…」
+ナエは出て行ってしまう
+
+(緑色かぶき)
+「中から開け閉めできるなら
+最初なんのために閉められてた鍵だったのか…」
+
+<event name=image file="material_circle.png" remove>
+<event name=image file="mob_nae.png" remove>
+(GM)
+じゃあアイディアでふってもいいよ
+
+<event name=image file="diceframe.png" put>
+<event name=dice skill="かぶき アイディア" result=41 x=270 y=170>
+
+<event name=image file="diceframe.png" remove>
+(GM)
+じゃあかぶきはきがつく
+この部屋は何かがおかしい
+何かがぐるぐる巻きにされた椅子や
+血と人の体液のすえた匂い
+
+(GM)
+気付いてしまう
+この部屋があの子をつかった
+村人の酷い娯楽に使われていることに
+
+(緑色かぶき)
+「たぶんこの部屋は……に使われてるんだろうね」
+といぬちーに
+
+(神山犬千代)
+「ﾋｭｰｯ。おっかねえな…しかもここは別の場所と来た
+いつの間にか運び出されたのか」
+
+(緑色かぶき)
+うぇる、旅館中を8時までに探索することってできるの？
+
+(GM)
+できるよ
+あとなんやかんやあって今はお昼
+君たちは今非常にお腹がへってる
+
+(神山犬千代)
+「飯よぉ、一応くれるっぽいしよぉ？食いにいかねぇ？」
+とバドミントンを一人でぽんぽんしながら
+犬千代はかぶきをチラ見するよ
+
+(緑色かぶき)
+「そうだねごはんたべよっか」
+
+<event name=image file="map2.jpg" put>
+(GM)
+はい調理室につきました
+広い調理場だね お米すめるがする
+
+<event name=image file="map2.jpg" remove>
+(緑色かぶき)
+ふうん…なんか気になるところはある？
+
+(GM)
+気になるところは特に無いかな
+ざっと見た感じは
+あと1D6ふってね
+
+<event name=image file="diceframe.png" put>
+<event name=dice skill="？？" result=1 x=270 y=170>
+
+<event name=image file="diceframe.png" remove>
+(GM)
+目星か聞き耳
+成功して下さい
+
+(神山犬千代)
+お願いされてる……
+
+<event name=image file="diceframe.png" put>
+<event name=dice skill="かぶき 目星" result=28 x=270 y=170>
+
+<event name=image file="diceframe.png" remove>
+(GM)
+それじゃあ歌舞伎揚げさんは
+
+(緑色かぶき)
+キャラだけじゃなくお前もハラ減ってんのか？
+
+(GM)
+なんか見たことある人が
+おにぎりを食べているのを見つける
+INTか知識でふって
+
+(緑色かぶき)
+知識なら、この知能派DQN二人組に任せとけよ
+(かぶき知識95 犬千代知識90)
+
+(神山犬千代)
+「あ、おいあれ…！まさか！」
+
+<event name=image file="diceframe.png" put>
+<event name=dice skill="犬千代 知識" result=35 x=270 y=170>
+
+<event name=image file="diceframe.png" remove>
+<event name=image file="material_circle.png" put>
+<event name=image file="mob_touno.png" put>
+(GM)
+君たちは見たことあるけど名前はでてこない
+そんな人を見つける
+同じクラスの女子だ
+
+<event name=image file="material_circle.png" remove>
+<event name=image file="mob_touno.png" remove>
+(GM)
+君たちと同じはみ出しものだけど
+接点はなかった感じでお願い
+
+(緑色かぶき)
+同じ？？
+
+(神山犬千代)
+「クラスの……えーっとだれだ……
+最前列か最後列にいたような……」
+
+(緑色かぶき)
+「ちーす　あれ？なんか今日雰囲気ちがくない？
+リボン新しいやつ？似合うね」
+って声かける
+
+(神山犬千代)
+「ドキョン…こんな状況でよくぞそんな…」
+
+(GM)
+じゃあまぁ名前は遠野さんだから
+遠野さんが君をみると
+あぁクラスの馬鹿騒ぎしてる方だ…と
+そして炊飯器を指差すよ
+
+(緑色かぶき)
+そちらへ視線を
+
+(神山犬千代)
+俺がいる
+
+(緑色かぶき)
+うわあ！？
+
+(GM)
+ほかほかのご飯があるね
+
+(神山犬千代)
+炊飯器の周りで何かあるか目星付けて探しまわってみていい？
+
+(GM)
+いいよ
+
+<event name=image file="diceframe.png" put>
+<event name=dice skill="犬千代 目星" result=43 x=270 y=170>
+
+<event name=image file="diceframe.png" remove>
+(GM)
+そこには元気なのりたまがありました
+
+(神山犬千代)
+「さぁってと…あいつが女にかまけてる間にこっちは…
+ノリタマあったぁー！！！！」
+
+(神山犬千代)
+「お、おう…！…か、かぶきぃ…あとそこの彼女…（小声）
+これ、使えよ。きっとうまいぞ。俺も飯食おう」
+
+<event name=image file="material_circle.png" put>
+<event name=image file="mob_touno.png" put>
+(GM)
+「のりたまｗｗはよ食べな。
+いざというとき動けなくなるよ」
+
+(緑色かぶき)
+なんでこの女、歴戦の勇者みたいな貫禄なのｗｗｗ
+
+(緑色かぶき)
+じゃあ遠野さんに目星したい
+
+<event name=image file="diceframe.png" put>
+<event name=dice skill="かぶき 目星" result=17 x=270 y=170>
+
+<event name=image file="diceframe.png" remove>
+(GM)
+えっとね
+首の後ろの襟あたりが不自然だね
+そこを見てると遠野さんがするっと首のところからバールを出す
+「これが気になるの？」
+
+(緑色かぶき)　(神山犬千代)
+「（やべえスケバンだ）」　「（やべえスケバンだ）」
+
+(GM)
+「やべぇスケバンだって顔してるよ」
+遠野さんはすぐにそれを隠すと
+
+(GM)
+「同じ部屋の友達が一人連れて行かれて帰ってこない
+多分もう死んでると思うけど連れ帰りたいなって」
+
+(GM)
+「私達が起きてすぐ帰るってあばれてね
+一人連れて行かれて村人が次に来た時はこれ…
+たぶん前歯だと思うんだけど投げられてね
+おとなしくしてろって」
+
+(緑色かぶき)
+「それで、きみはバールいっぽんで立ち向かおうってのか？
+この別世界で？」
+
+(GM)
+「別世界ってどういうこと？」
+
+(緑色かぶき)
+「ここはぼくらがいたのと別世界なんだよ」
+
+<event name=image file="material_circle.png" remove>
+<event name=image file="mob_touno.png" remove>
+(GM)
+そんなことわかる描写あった？
+
+(緑色かぶき)
+いや仲間にしたいだけ
+マジかやべえ仲間になっといたほうがいいって思わせたいだけだよ
+
+<event name=image file="material_circle.png" put>
+<event name=image file="mob_touno.png" put>
+(GM)
+あー
+「君らはまだ苗ちゃんに会ってないんだね？」
+頭大丈夫かって目でみられる
+
+(緑色かぶき)
+「なぬ？」
+
+(GM)
+「ここは別世界じゃなくて山の向こう側
+あねやはいもやと対の場所にあるらしいよ」
+
+(緑色かぶき)
+めっちゃ知ってる人じゃん…こっちより知ってる人じゃん…
+
+(神山犬千代)
+何も知らない系のNPCはGMは出さんとは思うぞ…
+出してもしょうがないし…
+
+<event name=image file="material_circle.png" remove>
+<event name=image file="mob_touno.png" remove>
+(GM)
+ﾒﾒﾀｧ
+
+(緑色かぶき)
+「そ、そーなんだ
+ぶっちゃけぼくらナエさんにももう会って指示をもらってるんだけど、
+遠野さんもなんか指示をもらったりした？」
+もうめっちゃ低姿勢に尋ねる
+
+<event name=image file="material_circle.png" put>
+<event name=image file="mob_touno.png" put>
+(GM)
+「ポケットのなかになにか入ってない？」
+と言われる
+
+(緑色かぶき)
+「……はい？」
+
+<event name=image file="material_circle.png" remove>
+<event name=image file="mob_touno.png" remove>
+(GM)
+君たちのポケットの中には四つ折りの紙がはいってる
+それを開くとそこにはいびつな五芒星のようなものが書いてあった
+
+(神山犬千代)
+「…なんだこれ」
+
+<event name=image file="material_circle.png" put>
+<event name=image file="mob_touno.png" put>
+(GM)
+君たちはこれがなんだかわからないけど
+何かに見られているような感覚を覚える
+それを見ると遠野は
+「あぁ苗ちゃんの言ってたのは君らなんだね」と
+
+(GM)
+「苗ちゃんの言ってた時間と場所
+それでとりあえずは助かるはず」
+
+(緑色かぶき)
+「ああ、それならちゃんと覚えてるぜ。えっと」
+
+(緑色かぶき)
+「彼が覚えてるぜ」
+いぬちーに振っとく
+
+(GM)
+「覚えてないんかーい！」
+
+(緑色かぶき)
+「ほっとけ！」
+
+(神山犬千代)
+「どうどう。つかあんた他に何か知ってんの？
+俺達夜に風呂場来いって言われたけど…まさか///」
+
+(GM)
+「風呂場裏でしょうが」
+
+(緑色かぶき)
+結局ぜんぶ教えてもらっててわらけるｗ
+
+(神山犬千代)
+「ああそうだ…あとよぉ、いつそのなえちゃんに出会ったんだ？」
+
+(GM)
+「最初の日にね
+仲良くなって昨日のうちに今日起こることと事情を少し聞いてた」
+
+(神山犬千代)
+「えっ、じゃあお前それ知っていながらここにいたの？
+マゾかよ…じゃない、マジかよ…
+やっぱその時は信じてなかったとかそういう系？」
+
+(緑色かぶき)
+「(マゾｗｗｗ)」
+
+(GM)
+「こうするように言われたからね
+下手にいなくなったほうがマズイんだって」
+
+(神山犬千代)
+「その時なんて聞いてたんだ？
+こうなるって…なんか、儀式なの？これ？」
+
+(GM)
+「そこまではちょっと
+わからない」
+
+(緑色かぶき)
+「遠野さんも２０時に風呂場裏へくるの？」
+
+(GM)
+「そうだね」
+
+(緑色かぶき)
+「きみはルームメイトを助けたいんだっけ？」
+
+(GM)
+「うん」
+
+(緑色かぶき)
+「わかった。じゃあそのときまたあおうね」
+
+(GM)
+「夜に合流しよう」
+
+(神山犬千代)
+現時刻はこれでどこまで進んだんだ
+
+<event name=image file="material_circle.png" remove>
+<event name=image file="mob_touno.png" remove>
+(GM)
+14時くらい
+
+(緑色かぶき)
+じゃ、19時くらいまでねよっか？
+
+(神山犬千代)
+仮眠は確かに必要だなぁ
+
+(緑色かぶき)
+かぶきーは寝るよ　いぬちーはどうする？
+
+(神山犬千代)
+2Fに戻る前に休憩室とか途中通る部屋をチラ見できる？
+
+(GM)
+できる
+目星聞き耳で
+
+<event name=image file="diceframe.png" put>
+<event name=dice skill="犬千代 目星" result=20 x=270 y=170>
+
+<event name=image file="diceframe.png" remove>
+(GM)
+村人はちらほらいて
+休憩室だけ暗くて人がいない
+
+(緑色かぶき)
+じゃ聞き耳はぼくが
+
+<event name=image file="diceframe.png" put>
+<event name=dice skill="かぶき 聞き耳" result=13 x=270 y=170>
+
+<event name=image file="diceframe.png" remove>
+(GM)
+うっすらと
+イノシシだとか
+猟銃
+あれはどこにしまったとか壊れたとか
+そんな話が聞こえる
+
+(緑色かぶき)
+いぬちーはまだやりたいことある？
+
+(神山犬千代)
+んー、どうせだから休憩室ちょっと覗いてめぼしいもの何かないか
+
+(GM)
+じゃあ休憩室にはいると
+暗くてぱっと見てもよくわからないけど
+雑多にものが置いてある
+
+(GM)
+とりあえず直ぐに目に入るのは大きい着物入れ
+あとは砂袋とか大きな壺とかイノシシの毛皮とか
+
+(GM)
+まず着物入れをあけるとそこには何も入っていない
+アイディアでふって
+
+<event name=image file="diceframe.png" put>
+<event name=dice skill="犬千代 アイディア" result=10 x=270 y=170>
+
+<event name=image file="diceframe.png" remove>
+(GM)
+犬千代くんが着物入れをみると
+君は気がつくそこには赤いシミと
+爪だろうか皮膚だろうか、何かのクズ
+気が付かなくてもいいことに気がついてしまう
+
+(GM)
+そこに入っていたのは人なんじゃないかって
+
+(GM)
+SANチェックしようか
+
+<event name=image file="diceframe.png" put>
+<event name=dice skill="犬千代 SANチェック" result=37 x=270 y=170>
+
+<event name=image file="diceframe.png" remove>
+(GM)
+成功なら減らない
+
+(GM)
+さて
+それをみてると
+後ろから話しかけられる
+超大型村人に
+
+(神山犬千代)
+超…
+
+<event name=image file="material_circle.png" put>
+<event name=image file="mob_male.png" put>
+(GM)
+例の山刀もってるひとね
+「あぁまだそれここにあったんか。
+お前らあんまりちょろちょとすんなよ」
+と言われる
+
+(緑色かぶき)
+「すませんー」
+
+(神山犬千代)
+手に持ってたバドミントンを掲げて
+「ちょっとこれどこに置けばいいかなーって…さっせんー」って感じで
+
+<event name=image file="material_circle.png" remove>
+<event name=image file="mob_male.png" remove>
+(GM)
+さて
+そうだね
+そろそろ寝ようか
+
+(神山犬千代)
+「気分わりーの見ちったな…ちょっと部屋戻って休むか…」
+って感じで
+
+(GM)
+じゃあ
+19時まで飛ばすよ
+さてキリがいいので
+
+<event name=image removeall>
+<event name=image file="bg_skype.jpg" put>
+<event name=image file="dialogbox.png" put>
+(ウェルダ)
+今日はここまで
+
+(緑色)
+ぼくらも寝るとするか
+
+(とーちゃん)
+うす
+
+(ウェルダ)　(緑色)　(とーちゃん)
+おやすみー
+
+つづく♪
+
+シナリオ「かたわれ」
+　ともつか治臣 様
+
+出演: ウェルダ 緑色 とーちゃん
+
+制作: 緑色
+Zキーでオープニング画面に戻ります

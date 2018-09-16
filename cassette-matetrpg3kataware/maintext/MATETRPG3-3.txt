@@ -1,0 +1,555 @@
+# いちいち座標指定面倒なので最初に全画像の座標登録しとく
+<event name=image file="bg_skype.jpg" x=0 y=0>
+<event name=image file="bg_ryokan.jpg" x=0 y=0>
+<event name=image file="bg_trees.jpg" x=0 y=0>
+<event name=image file="chara_gm.png" x=50 y=175>
+<event name=image file="chara_inu.png" x=382 y=114>
+<event name=image file="chara_kabu.png" x=499 y=127>
+<event name=image file="chara_kabu_kabu.png" x=499 y=127>
+<event name=image file="chara_kabu_ribbon.png" x=499 y=127>
+<event name=image file="dialogbox.png" x=20 y=320>
+<event name=image file="material_circle.png" x=145 y=60>
+<event name=image file="mob_female.png" x=195 y=100>
+<event name=image file="mob_male.png" x=200 y=95>
+<event name=image file="mob_monster.png" x=185 y=95>
+<event name=image file="mob_nae.png" x=195 y=95>
+<event name=image file="mob_touno.png" x=200 y=95>
+<event name=image file="diceframe.png" x=230 y=140>
+<event name=image file="sheet.png" x=60 y=30>
+<event name=image file="sheet_inu.png" x=60 y=30>
+<event name=image file="sheet_kabu.png" x=60 y=30>
+<event name=image file="map0.jpg" x=60 y=30>
+<event name=image file="map1.jpg" x=60 y=30>
+<event name=image file="map2.jpg" x=60 y=30>
+<event name=image removeall>
+<event name=image file="bg_skype.jpg" put>
+<event name=image file="dialogbox.png" put>
+<event name=bgm file="cave.mp3" volume=0.5 play>
+<event name=skip>
+
+(とーちゃん)
+うーっす
+
+(ウェルダ)
+やあ
+いまスイカバー食べてるからちょっとまって
+意外と量多い
+
+(とーちゃん)
+しかも確か204kcalある
+
+(ウェルダ)
+知らなかった…
+
+(緑色)
+なんでスイカバーのカロリーなんて即答できんのこいつ…
+ひょっとして東大出かな？
+
+(とーちゃん)
+スイカバーは東大出ないとわからないレベルのセキュリティでも
+施されてんの？
+
+(緑色)
+赤門の赤ってスイカバーの赤なんでしょ？
+
+(ウェルダ)
+おまたせ
+はじめるね
+
+(緑色)　(とーちゃん)
+ほい　うい
+
+<event name=image changefrom="bg_skype.jpg" changeto="bg_ryokan.jpg">
+<event name=image file="chara_gm.png" put>
+(GM)
+君たちは19時に
+どちらともなく起きるね
+
+<event name=image file="chara_kabu.png" put>
+(緑色かぶき)
+変わったことはある？
+
+(GM)
+んー
+1D100二人共ふって
+
+<event name=image file="diceframe.png" put>
+<event name=dice skill="かぶき ？？" result=66 x=270 y=170>
+
+<event name=dice skill="犬千代 ？？" result=43 x=270 y=170>
+
+<event name=image file="diceframe.png" remove>
+(GM)
+かぶきさんは起きた時にね
+今起きた場所があたかもいつもこの場所で寝起きしていたような
+そんな気持ちで目覚めた直ぐにおかしいなと気がつくけど
+なんでそう感じたかはわからないよ
+
+<event name=image file="chara_inu.png" put>
+(神山犬千代)
+スタンド攻撃うけてんじゃん…
+
+(緑色かぶき)
+この不気味な感じはたしかにスタンド攻撃だわ…
+いぬちーは？
+
+(GM)
+とくになにも
+
+(神山犬千代)
+スタンド抵抗できたかな？
+
+<event name=image file="map1.jpg" put>
+(緑色かぶき)
+じゃ、廊下に聞き耳する
+
+<event name=image file="diceframe.png" put>
+<event name=dice skill="かぶき 聞き耳" result=21 x=270 y=170>
+
+<event name=image file="diceframe.png" remove>
+(GM)
+なんかこう
+屋敷に人がいないんじゃないかって思えるくらい静か
+
+(緑色かぶき)
+「いぬっち、廊下には誰もいない感じだ　出るぞ」
+
+(神山犬千代)
+「いい夜ってやつか…へへっワクワクするじゃんよ…」
+
+(緑色かぶき)
+よし　じゃあ
+忍び歩きで階段までいく
+
+<event name=image file="diceframe.png" put>
+<event name=dice skill="かぶき 忍び歩き" result=27 x=270 y=170>
+
+<event name=image file="diceframe.png" remove>
+(GM)
+君は猫のようにしなやかに階段まで歩いていったよ
+
+(神山犬千代)
+つよい
+
+(緑色かぶき)
+階下に聞き耳する
+
+(GM)
+1階からも音はしない
+でもなんか外から声が聴こえる気がする
+
+<event name=image changefrom="map1.jpg" changeto="map2.jpg">
+(緑色かぶき)
+いぬっちといっしょに降りる
+
+(神山犬千代)
+追うぜ。特殊部隊めいてきたな
+
+(緑色かぶき)
+楽しくなってきた
+浴場への渡り廊下を渡っていく
+
+<event name=image file="material_circle.png" put>
+<event name=image file="mob_touno.png" put>
+(GM)
+渡り廊下は静かだけど後ろから足音がする
+後ろから声をかけられるよ
+遠野さんだ
+
+(神山犬千代)
+「びっくりするわ…」
+
+(緑色かぶき)
+「ちょうどいい　いこうか」
+浴場裏に行く
+
+<event name=image file="map2.jpg" remove>
+<event name=image file="mob_touno.png" remove>
+<event name=image file="mob_nae.png" put>
+(GM)
+浴場裏につくとなえちゃんがいる
+なえちゃんは匕首をとりだす
+
+(GM)
+目の前の竹柵が
+お風呂のせいで腐ってる部分があって
+それを丁寧に解体していく
+
+(GM)
+苗「いこう。静かについてきて」
+
+(神山犬千代)
+「お、おう…一体何なんだ…イノシシとかでねーよな…」
+
+<event name=image file="material_circle.png" remove>
+<event name=image file="mob_nae.png" remove>
+<event name=image changefrom="bg_ryokan.jpg" changeto="bg_trees.jpg">
+(GM)
+少し歩くと獣道？にでる
+1D6ふって
+
+<event name=image file="diceframe.png" put>
+<event name=dice skill="？？" result=1 x=270 y=170>
+
+<event name=image file="diceframe.png" remove>
+(GM)
+えっとねぇ
+結構歩いたけど誰とも会わずに進んだ
+
+(GM)
+明かりが見えてくる
+苗がふせてと手で指示をだすよ
+
+(緑色かぶき)
+ふせる
+
+(神山犬千代)
+わん
+
+(緑色かぶき)
+うるさい
+
+<event name=image file="material_circle.png" put>
+<event name=image file="mob_touno.png" put>
+(GM)
+すこし進むと村人が一人いる
+苗が舌打ちすると
+遠野「私がいこうか？」と
+
+<event name=image file="material_circle.png" remove>
+<event name=image file="mob_touno.png" remove>
+(GM)
+村人は鉱山への入り口を見張ってるみたいだね
+1D6ふって
+
+<event name=image file="diceframe.png" put>
+<event name=dice skill="？？" result=1 x=270 y=170>
+
+<event name=image file="diceframe.png" remove>
+<event name=image file="material_circle.png" put>
+<event name=image file="mob_nae.png" put>
+(GM)
+すごいね
+じゃあ苗が
+「私があの村人をどうにかするから
+君たちはあの坑道から向こう側に抜けて神社にいって」
+
+(GM)
+「どういうことなのかはそこの人が教えてくれるから
+あの紙を見せれば協力してくれる
+運が良ければまた会おうね」って
+
+(神山犬千代)
+「神社の人か…っていうか、あんたホントに平気なのかよ
+なんか大丈夫そうな口ぶりだけどよぉ」
+
+(緑色かぶき)
+目星聞き耳であたりの様子を
+
+<event name=image file="diceframe.png" put>
+<event name=dice skill="かぶき 目星" result=72 x=270 y=170>
+
+<event name=dice skill="かぶき 聞き耳" result=59 x=270 y=170>
+
+<event name=image file="diceframe.png" remove>
+<event name=image file="material_circle.png" remove>
+<event name=image file="mob_nae.png" remove>
+(GM)
+あたりにいるのはあの村人一人だけだね
+そして同時にあの超大型村人だってこともわかる
+
+(緑色かぶき)
+「ナエちゃん
+あいつは全員でつぶそうぜ」
+
+<event name=image file="material_circle.png" put>
+<event name=image file="mob_nae.png" put>
+(GM)
+「無理だよ
+直ぐに人を呼ばれる
+ばれちゃだめ
+私が連れて行くから」
+
+(緑色かぶき)
+「そっか。じゃあいくぞいぬっち、遠野ちゃん」
+
+(神山犬千代)
+「…おうよぉ。ナエナエ、根性あるんだな
+俺はビビリだからよぉ、行かせてもらうぜ」
+
+(GM)
+じゃあ苗ちゃんが歩いて行って村人と少し話すと
+二人は旅館の方に降りて行くよ
+
+<event name=image file="material_circle.png" remove>
+<event name=image file="mob_nae.png" remove>
+(GM)
+坑道にはいるとろうそくがたくさんあって明るい
+いつから燃えているのかわからないろうそくは
+不気味にみえるよ
+
+(神山犬千代)
+持って帰れそう？
+
+(GM)
+一つろうそくを手に取ると
+ぼろりとくずれ落ちて消えてしまった
+
+(神山犬千代)
+「…ひゅう。なんだこれ…
+やろうとすれば全部消せるんだな…」
+
+(緑色かぶき)
+「ちょっと間をあけてついてきてよ　様子をみるから」
+って感じで進みたいです
+忍び歩きつかっていい？
+
+(GM)
+どうぞ
+
+<event name=image file="diceframe.png" put>
+<event name=dice skill="かぶき 忍び歩き" result=96 x=270 y=170>
+
+<event name=image file="diceframe.png" remove>
+(緑色かぶき)
+ちょっとロールしすぎか！反省です…
+
+(GM)
+君たちは何事も無く坑道をぬける
+外に出てすこし緊張の糸がゆるむと
+神社の方向はどっちだっけと遠野がはなしかけ
+
+(GM)
+て崩れ落ちる
+後ろにはやけに細い村人
+
+(神山犬千代)
+と、遠野ー！？
+
+<event name=image file="material_circle.png" put>
+<event name=image file="mob_monster.png" put>
+(GM)
+顔はくずれまるでいくつも器官が作れては
+壊死したあとのような酷い顔の男がそこにいる
+低くかすれた声で
+「てまぁかけさせやがっでよぉ」
+
+(GM)
+手には日本刀
+そこに立っていた遠野の血がべっとりついた日本刀をもってる
+
+(GM)
+戦闘ラウンドにはいるよ
+いいかな
+
+(緑色かぶき)　(神山犬千代)
+わかった　ん
+
+<event name=image file="material_circle.png" remove>
+<event name=image file="mob_monster.png" remove>
+(GM)
+DEXいくつだっけ
+
+(緑色かぶき)　(神山犬千代)
+かぶきー10　ちよ15
+
+(GM)
+じゃあちよから行動
+戦闘ラウンドはハウスルールで
+攻撃後も回避や受け流しができます
+楽しく戦闘してね
+
+(神山犬千代)
+「て、てめぇ！なにかましてくれとんじゃワレェ！
+アネゴォ！今俺があいつの鼻へし折ってやりやす！待っててくだせぇ！」
+
+(緑色かぶき)
+盛り上がってきたァ！
+いぬちーしばらく奴を引き付けてくれよ
+そのすきにぼくが姉御からバールぱくって渡すから
+
+(神山犬千代)
+おう。
+ってそれ渡さないで直接殴ってもよくない？
+
+(緑色かぶき)
+あぶっちゃけぼくのがSTRあるから
+そのほうがいいかも
+
+(神山犬千代)
+んじゃ男の拳を放つ
+
+<event name=image file="diceframe.png" put>
+<event name=dice skill="犬千代 こぶし" result=40 x=270 y=170>
+
+<event name=image file="diceframe.png" remove>
+(GM)
+刀で受け流しするよ
+
+(神山犬千代)
+拳大丈夫かよ！
+
+(GM)
+大丈夫じゃないよ
+
+<event name=image file="diceframe.png" put>
+<event name=dice skill="？？" result=24 x=270 y=170>
+
+<event name=image file="diceframe.png" remove>
+(GM)
+じゃあいぬちーは
+1D6でダメージ受けて
+
+<event name=image file="diceframe.png" put>
+<event name=dice skill="ダメージ" result=5 x=270 y=170>
+
+<event name=image file="diceframe.png" remove>
+(神山犬千代)
+いったぁ！？？
+
+(GM)
+刀を思い切り殴りつけたいぬちーは
+指がとれるんじゃないかってくらいの傷を手においました
+最大体力の半分へってるからショックロールだね
+
+<event name=image file="diceframe.png" put>
+<event name=dice skill="犬千代 ショックロール" result=65 x=270 y=170>
+
+<event name=image file="diceframe.png" remove>
+(GM)
+気絶した
+じゃあかぶきーのターン
+
+(神山犬千代)
+「意識遠のくだろうがてめぇ！覚えてろおらぁ！」ﾊﾟﾀﾘ
+
+(GM)　(緑色かぶき)
+元気だなぁｗ　「元気だなあ…」
+
+(神山犬千代)
+早々にごめん
+
+(緑色かぶき)
+はは、いいってことよ
+
+(緑色かぶき)
+それよりそっちこそ許せよ
+サヨナラバイビー！スッタカター
+
+(GM)　(神山犬千代)
+ｗｗｗ　あっ！？
+
+(GM)
+DEX対抗だね
+
+<event name=image file="diceframe.png" put>
+<event name=dice skill="かぶき DEX対抗" result=11 x=270 y=170>
+
+<event name=image file="diceframe.png" remove>
+(緑色かぶき)
+はは、ご町内イチの俊足に勝てるもんか！
+
+<event name=image file="material_circle.png" put>
+<event name=image file="mob_monster.png" put>
+(GM)
+じゃあ苦し紛れに投擲させてもらおう
+50でポン刀投げるよ
+
+<event name=image file="diceframe.png" put>
+<event name=dice skill="敵 投擲" result=12 x=270 y=170>
+
+<event name=image file="diceframe.png" remove>
+(緑色かぶき)
+なんか飛んできた！？
+
+(GM)
+背中むけてるので回避はできない
+腕にあたって
+倒れこむ
+
+<event name=image file="diceframe.png" put>
+<event name=dice skill="ダメージ" result=6 x=270 y=170>
+
+<event name=dice skill="かぶき ショックロール" result=75 x=270 y=170>
+
+<event name=image file="diceframe.png" remove>
+(緑色かぶき)
+ﾊﾞﾀｯ
+
+<event name=image file="material_circle.png" remove>
+<event name=image file="mob_monster.png" remove>
+(GM)
+さてと
+じゃあ幸運で二人共どうぞ
+
+<event name=image file="diceframe.png" put>
+<event name=dice skill="かぶき 幸運" result=39 x=270 y=170>
+
+<event name=dice skill="犬千代 幸運" result=36 x=270 y=170>
+
+<event name=image file="diceframe.png" remove>
+(GM)
+運だけはいいんだから…
+
+(GM)
+遠くから「おんどりゃー！！」と
+声が聞こえた気がした
+
+(神山犬千代)
+この声！
+
+(緑色かぶき)
+Tさん！？
+
+(神山犬千代)
+寺生まれの！？
+
+(GM)
+君たちの意識は深く沈む
+
+(GM)
+さて
+ちょっと早いけど今日はこのへんまで
+
+<event name=image removeall>
+<event name=image file="bg_skype.jpg" put>
+<event name=image file="dialogbox.png" put>
+(緑色)
+ほい
+
+(とーちゃん)
+おっけーよ
+
+(緑色)
+さあ絶体絶命のチーム・クラスのはずれ者！
+初戦闘であえなく全滅した彼らはどうなってしまうのか！
+
+(とーちゃん)
+やめないなんかその…
+仲間はずれ同士がつるんだグループみたいな…
+
+(ウェルダ)
+次回、仲間を見捨てて逃走したかぶきーを
+元仲間たちの容赦ない報復が襲う
+
+(緑色)
+ちょ、オィイ？
+
+(とーちゃん)
+よくも見捨てたね？(笑顔)
+
+(緑色)
+ぼ、ぼくは悪くねえ！
+
+(ウェルダ)　(緑色)　(とーちゃん)
+おやすみー
+
+つづく♪
+
+シナリオ「かたわれ」
+　ともつか治臣 様
+
+出演: ウェルダ 緑色 とーちゃん
+
+制作: 緑色
+Zキーでオープニング画面に戻ります
