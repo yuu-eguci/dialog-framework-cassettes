@@ -1,0 +1,5 @@
+bg_skype.jpg [0, 0]
+dialogbox.png [20, 320]
+chara_danbo.png [320, 120]
+chara_midori.png [460, 120]
+chara_danbo_nou.png [340, 120]
