@@ -7,9 +7,9 @@ class Conf:
     cassette = 'cassette-matetrpg3kataware'
     # メインテキストの名前
     maintextName = [
-        'matetrpg3-1.txt',
-        'matetrpg3-2.txt',
-        'matetrpg3-3.txt',
+        'MATETRPG3-1.txt',
+        'MATETRPG3-2.txt',
+        'MATETRPG3-3.txt',
     ]
 
     # 画像はimageフォルダに入れること。

@@ -1,0 +1,11 @@
+services:
+  validate:
+    build:
+      context: .
+      target: validate
+    image: dialog-framework-cassettes-validate
+  check:
+    build:
+      context: .
+      target: check
+    image: dialog-framework-cassettes-check
