@@ -58,6 +58,10 @@ docker compose down --rmi all
 
 GitHub Actions でも同じ `check` と `validate` を実行します。
 
+## ライセンス
+
+各カセットの `other/VL-Gothic-Regular.ttf` は VL Gothic 20141206 (Version 2.120) です。ライセンス文は上流配布物から無変更で `licenses/VL-Gothic/` に収録しています。
+
 ## 開発用ファイル
 
 | パス | 内容 |
